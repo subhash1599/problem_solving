@@ -18,8 +18,7 @@ def set_matrix_zeros(matrix):
         for column in range(columns):
             if zero_rows[row] or zero_columns[column]:
                 matrix[row][column]=0
-    
-    print(matrix)
+    return matrix
 
 if __name__=="__main__":
-    set_matrix_zeros([[0,1,2,0],[3,4,5,2],[1,3,1,5]])
+    print(set_matrix_zeros([[0,1,2,0],[3,4,5,2],[1,3,1,5]]))
